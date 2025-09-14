@@ -69,7 +69,7 @@ export default function PricingPage() {
 
           <PricingCard
             title="Premium"
-            price="$5"
+            price="$4.99"
             period="/month"
             description="Full magical experience"
             features={[

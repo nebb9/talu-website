@@ -44,11 +44,11 @@ export default function Home() {
       <Header />
       
       {/* Hero Section */}
-      <Section background="gradient" padding="xl" className="pt-32">
+      <Section background="gradient" padding="xl" className="pt-40">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Text Content */}
           <div className="animate-fade-in-up">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
               Bedtime stories your child will{' '}
               <span className="text-[#6C63FF]">never forget</span>
             </h1>
@@ -151,7 +151,8 @@ export default function Home() {
       <Section padding="lg">
         <div className="text-center max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Bedtime deserves more than the same old story.
+            Bedtime deserves 
+             <span className="text-[#6C63FF]"> more than the same old story.</span>
           </h2>
           <p className="text-xl text-gray-600 leading-relaxed">
             Parents want to spark imagination and closeness, but after a long day it's hard to invent new stories. Books are wonderful, but they don't reflect your child's world—their name, their family, their day.
@@ -517,7 +518,7 @@ export default function Home() {
               </span>
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-2">Premium</h3>
-            <div className="text-4xl font-bold text-[#6C63FF] mb-4">$5<span className="text-lg text-gray-600">/month</span></div>
+            <div className="text-4xl font-bold text-[#6C63FF] mb-4">$4.99<span className="text-lg text-gray-600">/month</span></div>
             <ul className="space-y-3 mb-6">
               <li className="flex items-center text-gray-700">
                 <span className="w-2 h-2 bg-[#6C63FF] rounded-full mr-3"></span>

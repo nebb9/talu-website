@@ -101,9 +101,9 @@ export function DownloadCTA({
             {buttonText}
           </Button>
         )}
-        <div className="flex flex-col sm:flex-row gap-3">
+        {/* <div className="flex flex-col sm:flex-row gap-3">
           {renderStoreButtons()}
-        </div>
+        </div> */}
       </div>
     );
   }
@@ -116,9 +116,9 @@ export function DownloadCTA({
             {buttonText}
           </Button>
         )}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        {/* <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           {renderStoreButtons()}
-        </div>
+        </div> */}
       </div>
     );
   }
@@ -131,9 +131,9 @@ export function DownloadCTA({
           {buttonText}
         </Button>
       )}
-      <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
+      {/* <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
         {renderStoreButtons()}
-      </div>
+      </div> */}
     </div>
   );
 }

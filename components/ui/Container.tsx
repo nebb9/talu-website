@@ -11,7 +11,7 @@ export function Container({ children, className, size = 'lg' }: ContainerProps) 
   const sizes = {
     sm: 'max-w-4xl',
     md: 'max-w-5xl', 
-    lg: 'max-w-6xl',
+    lg: 'max-w-7xl',
     xl: 'max-w-7xl',
   };
 
