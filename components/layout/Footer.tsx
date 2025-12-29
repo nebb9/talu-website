@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import { Container } from '../ui/Container';
-import { Instagram, Youtube } from 'lucide-react';
+import Link from "next/link";
+import Image from "next/image";
+import { Container } from "../ui/Container";
+import { Instagram, Youtube } from "lucide-react";
 
 export function Footer() {
   return (
@@ -25,20 +25,27 @@ export function Footer() {
                 <span className="text-2xl font-bold">Talu</span>
               </Link>
               <p className="text-gray-400 mb-4 max-w-md">
-                Making bedtime magical with personalized stories that spark imagination and strengthen bonds between parents and children.
+                Making bedtime magical with personalized stories that spark
+                imagination and strengthen bonds between parents and children.
               </p>
-              
+
               {/* Social Links */}
-              <div className="flex space-x-4">
-                <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
+              {/* <div className="flex space-x-4">
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors duration-200"
+                >
                   <Instagram className="h-5 w-5" />
                   <span className="sr-only">Instagram</span>
                 </a>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors duration-200"
+                >
                   <Youtube className="h-5 w-5" />
                   <span className="sr-only">YouTube</span>
                 </a>
-              </div>
+              </div> */}
             </div>
 
             {/* Links */}
@@ -46,15 +53,18 @@ export function Footer() {
               <h3 className="font-medium mb-4">Product</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/" className="text-gray-400 hover:text-white transition-colors duration-200">
+                  <Link
+                    href="/"
+                    className="text-gray-400 hover:text-white transition-colors duration-200"
+                  >
                     Home
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link href="/pricing" className="text-gray-400 hover:text-white transition-colors duration-200">
                     Pricing
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
 
@@ -62,13 +72,19 @@ export function Footer() {
             <div>
               <h3 className="font-medium mb-4">Support</h3>
               <ul className="space-y-2">
-                <li>
-                  <a href="mailto:support@taluapp.com" className="text-gray-400 hover:text-white transition-colors duration-200">
+                {/* <li>
+                  <a
+                    href="mailto:support@taluapp.com"
+                    className="text-gray-400 hover:text-white transition-colors duration-200"
+                  >
                     Contact
                   </a>
-                </li>
+                </li> */}
                 <li>
-                  <Link href="/privacy" className="text-gray-400 hover:text-white transition-colors duration-200">
+                  <Link
+                    href="/privacy"
+                    className="text-gray-400 hover:text-white transition-colors duration-200"
+                  >
                     Privacy Policy
                   </Link>
                 </li>
@@ -79,7 +95,7 @@ export function Footer() {
           {/* Copyright */}
           <div className="border-t border-gray-800 mt-8 pt-8">
             <p className="text-gray-400 text-center">
-              © 2025 Talu. All rights reserved.
+              © 2026 Talu. All rights reserved.
             </p>
           </div>
         </div>

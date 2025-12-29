@@ -15,11 +15,8 @@ export function Header() {
   const [isLangOpen, setIsLangOpen] = useState(false);
 
   const pathname = usePathname();
-
-  // Detect current locale from URL
   const currentLocale = pathname.split("/")[1] as Locale;
 
-  // Build URL for another locale
   const getLocalizedPath = (locale: Locale) => {
     const segments = pathname.split("/");
     segments[1] = locale;
@@ -27,10 +24,7 @@ export function Header() {
   };
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
-    };
-
+    const handleScroll = () => setIsScrolled(window.scrollY > 10);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -71,14 +65,8 @@ export function Header() {
             >
               Home
             </Link>
-            <Link
-              href={`/${currentLocale}/pricing`}
-              className="text-gray-700 hover:text-[var(--primary)] font-medium"
-            >
-              Pricing
-            </Link>
 
-            {/* 🌍 Language switcher (desktop) */}
+            {/* 🌍 Language switcher */}
             <div className="relative">
               <button
                 onClick={() => setIsLangOpen(!isLangOpen)}
@@ -109,14 +97,14 @@ export function Header() {
             </div>
           </nav>
 
-          {/* CTA Button - Desktop */}
+          {/* Primary CTA – Desktop */}
           <div className="hidden md:block">
             <Button
-              href="#download"
+              href="#waitlist"
               size="md"
               className="bg-[var(--primary)] hover:bg-[var(--primary-strong)] text-white"
             >
-              Download the App
+              Join the waitlist
             </Button>
           </div>
 
@@ -144,15 +132,8 @@ export function Header() {
               >
                 Home
               </Link>
-              <Link
-                href={`/${currentLocale}/pricing`}
-                className="block px-4 py-2 text-gray-700"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Pricing
-              </Link>
 
-              {/* 🌍 Language switcher (mobile) */}
+              {/* Language switcher – mobile */}
               <div className="px-4 pt-2 border-t">
                 {locales.map((locale) => (
                   <Link
@@ -170,13 +151,14 @@ export function Header() {
                 ))}
               </div>
 
-              <div className="px-4">
+              {/* Primary CTA – Mobile */}
+              <div className="px-4 pt-2">
                 <Button
-                  href="#download"
+                  href="#waitlist"
                   className="w-full bg-[var(--primary)] hover:bg-[var(--primary-strong)] text-white"
                   size="md"
                 >
-                  Download the App
+                  Join the waitlist
                 </Button>
               </div>
             </div>
