@@ -1,6 +1,7 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Container } from '../ui/Container';
-import { Stars, Instagram, Youtube } from 'lucide-react';
+import { Instagram, Youtube } from 'lucide-react';
 
 export function Footer() {
   return (
@@ -11,8 +12,15 @@ export function Footer() {
             {/* Logo & Description */}
             <div className="md:col-span-2">
               <Link href="/" className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-[#6C63FF] rounded-lg flex items-center justify-center">
-                  <Stars className="h-4 w-4 text-white" />
+                <div className="w-9 h-9 relative">
+                  <Image
+                    src="/logo.svg"
+                    alt="Talu logo"
+                    fill
+                    sizes="36px"
+                    className="object-contain"
+                    priority={false}
+                  />
                 </div>
                 <span className="text-2xl font-bold">Talu</span>
               </Link>

@@ -27,10 +27,10 @@ export function PricingCard({
   badge
 }: PricingCardProps) {
   return (
-    <Card className={`p-8 relative ${featured ? 'ring-2 ring-[#6C63FF] scale-105' : ''}`} hover>
+    <Card className={`p-8 relative ${featured ? 'ring-2 ring-[var(--primary)] scale-105' : ''}`} hover>
       {badge && (
         <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-          <span className="bg-[#FFD66B] text-[#1E1E1E] px-4 py-1 rounded-full text-sm font-medium">
+          <span className="bg-[var(--accent-50)] text-[var(--accent-800)] px-4 py-1 rounded-full text-sm font-medium">
             {badge}
           </span>
         </div>
@@ -39,7 +39,7 @@ export function PricingCard({
       <div className="text-center mb-8">
         <h3 className="text-2xl font-bold text-gray-900 mb-2">{title}</h3>
         <div className="mb-4">
-          <span className="text-4xl font-bold text-[#6C63FF]">{price}</span>
+          <span className="text-4xl font-bold text-[var(--primary)]">{price}</span>
           {period && <span className="text-gray-600 ml-2">{period}</span>}
         </div>
         {description && (

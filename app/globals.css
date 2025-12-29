@@ -3,12 +3,34 @@
 @tailwind utilities;
 
 :root {
-  --primary: #6C63FF;
-  --accent-yellow: #FFD66B;
-  --accent-peach: #FF8A65;
-  --text-primary: #1E1E1E;
-  --text-muted: #6E6E6E;
-  --background: #FFFFFF;
+  --primary-50: #f8fbff;
+  --primary-100: #f2f1fa;
+  --primary-200: #e1e0f7;
+  --primary-300: #c7c5de;
+  --primary-400: #aea7ca;
+  --primary-500: #8b85ac;
+  --primary-600: #64618a;
+  --primary-700: #484473;
+  --primary-800: #332358;
+  --primary-900: #15104d;
+
+  --accent-50: #fbeafa;
+  --accent-100: #e1c0ed;
+  --accent-200: #a3a8e8;
+  --accent-300: #7a70dd;
+  --accent-400: #6050d6;
+  --accent-500: #3a82cc;
+  --accent-600: #3326ba;
+  --accent-700: #2b26b1;
+  --accent-800: #171770;
+  --accent-900: #18125c;
+
+  --primary: var(--accent-400);
+  --primary-strong: var(--accent-600);
+  --primary-soft: var(--accent-200);
+  --text-primary: #1e1e1e;
+  --text-muted: #5a5675;
+  --background: #ffffff;
 }
 
 @layer base {
@@ -16,7 +38,8 @@
     @apply border-border;
   }
   body {
-    @apply bg-white text-gray-900;
+    background-color: var(--background);
+    color: var(--text-primary);
   }
   
   html {
@@ -27,16 +50,16 @@
 @layer components {
   .section-stars {
     background-image: 
-      radial-gradient(2px 2px at 20px 30px, rgba(108, 99, 255, 0.15), transparent),
-      radial-gradient(2px 2px at 40px 70px, rgba(255, 214, 107, 0.2), transparent),
-      radial-gradient(1px 1px at 90px 40px, rgba(255, 138, 101, 0.15), transparent),
-      radial-gradient(1px 1px at 130px 80px, rgba(108, 99, 255, 0.1), transparent);
+      radial-gradient(2px 2px at 20px 30px, rgba(160, 152, 230, 0.2), transparent),
+      radial-gradient(2px 2px at 40px 70px, rgba(96, 80, 214, 0.18), transparent),
+      radial-gradient(1px 1px at 90px 40px, rgba(59, 40, 177, 0.12), transparent),
+      radial-gradient(1px 1px at 130px 80px, rgba(248, 235, 250, 0.18), transparent);
     background-repeat: repeat;
     background-size: 150px 100px;
   }
   
   .hero-gradient {
-    background: linear-gradient(135deg, rgba(108, 99, 255, 0.05) 0%, rgba(255, 214, 107, 0.05) 100%);
+    background: linear-gradient(135deg, rgba(96, 80, 214, 0.12) 0%, rgba(248, 235, 250, 0.25) 100%);
   }
 }
 

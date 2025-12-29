@@ -19,9 +19,9 @@ export function Button({
   const baseClasses = 'inline-flex items-center justify-center rounded-2xl font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2';
   
   const variants = {
-    primary: 'bg-[#6C63FF] text-white hover:bg-[#5B52E6] focus:ring-[#6C63FF] shadow-lg hover:shadow-xl transform hover:-translate-y-0.5',
-    secondary: 'bg-[#FFD66B] text-[#1E1E1E] hover:bg-[#FFCC4D] focus:ring-[#FFD66B] shadow-lg hover:shadow-xl transform hover:-translate-y-0.5',
-    ghost: 'border-2 border-[#6C63FF] text-[#6C63FF] hover:bg-[#6C63FF] hover:text-white focus:ring-[#6C63FF]'
+    primary: 'bg-[var(--primary)] text-white hover:bg-[var(--primary-strong)] focus:ring-[var(--primary-soft)] shadow-lg hover:shadow-xl transform hover:-translate-y-0.5',
+    secondary: 'bg-[var(--accent-50)] text-[var(--accent-800)] hover:bg-[var(--accent-100)] focus:ring-[var(--accent-200)] shadow-lg hover:shadow-xl transform hover:-translate-y-0.5',
+    ghost: 'border-2 border-[var(--primary)] text-[var(--primary)] hover:bg-[var(--primary)] hover:text-white focus:ring-[var(--primary-soft)]'
   };
   
   const sizes = {

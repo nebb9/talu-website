@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Talu logo">
+  <rect width="512" height="512" rx="40" fill="#6050d6"/>
+  <path
+    d="M132 412c-28-62-74-193-33-278 12-24 34-41 58-40 28 2 50 28 56 56 12 52 6 154 6 154m63 108c-8-117 15-241 55-271 24-18 57-17 85 12 32 33 60 100 59 146-.7 38-34 82-79 70-16-4-34-18-58-50-22-30-42-69-51-96"
+    fill="none"
+    stroke="#ffffff"
+    stroke-width="20"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M186 398c-18-38-44-116-31-179m204 190c16-35 32-65 45-88m-78 32c5-17 6-37 4-59"
+    fill="none"
+    stroke="#ffffff"
+    stroke-width="20"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
