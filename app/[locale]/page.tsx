@@ -2,20 +2,13 @@ import Image from "next/image";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Section } from "@/components/ui/Section";
-import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { FAQ } from "@/components/ui/FAQ";
 import { Testimonial } from "@/components/ui/Testimonial";
-import {
-  Stars,
-  Heart,
-  BookOpen,
-  Moon,
-  UserCheck,
-  Palette,
-  Mic,
-} from "lucide-react";
+import { Stars, Heart, BookOpen, Moon, UserCheck, Mic } from "lucide-react";
 import { WaitlistForm } from "@/components/waitlist/WaitlistForm";
+import { Locale } from "@/lib/i18n";
+import { dictionaries } from "@/lib/i18n/index";
 
 const faqItems = [
   {
@@ -40,7 +33,13 @@ const faqItems = [
   },
 ];
 
-export default function Home() {
+type PageProps = {
+  params: { locale: Locale };
+};
+
+export default function HomePage({ params }: PageProps) {
+  const dict = dictionaries[params.locale];
+
   return (
     <>
       <Header />
@@ -50,15 +49,14 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-              Bedtime stories for kids
-              <br />
-              <span className="text-[var(--primary)]">made personal</span>
+              {dict.hero.title}{" "}
+              <span className="text-[var(--primary)]">
+                {dict.hero.highlight}
+              </span>
             </h1>
 
             <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
-              Talu creates bedtime stories for kids using your child’s name and
-              moments from their day - helping children relax and fall asleep
-              naturally.
+              {dict.hero.description}
             </p>
 
             {/* WAITLIST CTA */}
@@ -66,10 +64,7 @@ export default function Home() {
               <WaitlistForm />
             </div>
 
-            <p className="text-sm text-gray-500">
-              Launching soon on iOS & Android · Early access for waitlist
-              members
-            </p>
+            <p className="text-sm text-gray-500">{dict.trust}</p>
           </div>
 
           {/* Visual */}
