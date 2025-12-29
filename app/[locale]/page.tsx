@@ -74,9 +74,9 @@ export default function Home() {
 
           {/* Visual */}
           <div className="relative lg:pl-8">
-            <div className="relative max-w-sm mx-auto rounded-[3rem] overflow-hidden shadow-2xl ring-1 ring-black/5">
+            <div className="relative max-w-sm mx-auto">
               <Image
-                src="/hero-phone.png"
+                src="/hero-phone-3.png"
                 alt="Bedtime stories for kids app preview"
                 width={375}
                 height={812}
