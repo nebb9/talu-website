@@ -49,11 +49,7 @@ export default function PurchaseSuccessPage({
         <h1 className="text-3xl font-semibold text-gray-900 mb-3">{t.title}</h1>
         <p className="text-lg text-gray-600 mb-8">{t.body}</p>
 
-        <Button
-          href="https://talustories.com/home"
-          size="lg"
-          className="w-full"
-        >
+        <Button href="talu://purchase-success" size="lg" className="w-full">
           {t.button}
         </Button>
       </div>
