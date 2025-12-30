@@ -1,0 +1,22 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "7XUG85G4FC.com.hyperether.talu",
+        "paths": [
+          "/",
+          "/home",
+          "/tabs/home",
+          "/tabs/library",
+          "/tabs/settings",
+          "/tabs/generate-story",
+          "/tabs/*",
+          "/screens/*",
+          "/en/purchase-success",
+          "/en/*"
+        ]
+      }
+    ]
+  }
+}
