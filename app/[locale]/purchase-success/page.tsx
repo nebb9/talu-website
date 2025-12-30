@@ -1,10 +1,10 @@
-import { Button } from '@/components/ui/Button';
-import { CheckCircle2 } from 'lucide-react';
+import { Button } from "@/components/ui/Button";
+import { CheckCircle2 } from "lucide-react";
 
 export const metadata = {
-  title: 'Purchase Successful | Talu',
+  title: "Purchase Successful | Talu",
   description:
-    'Your Talu subscription is active. Tap the button below to open the app and start reading.',
+    "Your Talu subscription is active. Tap the button below to open the app and start reading.",
   robots: {
     index: false,
     follow: false,
@@ -13,19 +13,19 @@ export const metadata = {
 
 const copy = {
   en: {
-    title: 'Purchase successful',
-    body: 'Thanks for subscribing to Talu Premium. Tap below to open the app and start exploring your stories.',
-    button: 'Open Talu',
+    title: "Purchase successful",
+    body: "Thanks for subscribing to Talu Premium. Tap below to open the app and start exploring your stories.",
+    button: "Open Talu",
   },
   sr: {
-    title: 'Uspešna kupovina',
-    body: 'Hvala što ste se pretplatili na Talu Premium. Dodirnite dole da otvorite aplikaciju i počnete da istražujete priče.',
-    button: 'Otvori Talu',
+    title: "Uspešna kupovina",
+    body: "Hvala što ste se pretplatili na Talu Premium. Dodirnite dole da otvorite aplikaciju i počnete da istražujete priče.",
+    button: "Otvori Talu",
   },
   de: {
-    title: 'Kauf erfolgreich',
-    body: 'Danke für dein Talu Premium-Abo. Tippe unten, um die App zu öffnen und deine Geschichten zu entdecken.',
-    button: 'Talu öffnen',
+    title: "Kauf erfolgreich",
+    body: "Danke für dein Talu Premium-Abo. Tippe unten, um die App zu öffnen und deine Geschichten zu entdecken.",
+    button: "Talu öffnen",
   },
 };
 
@@ -49,7 +49,11 @@ export default function PurchaseSuccessPage({
         <h1 className="text-3xl font-semibold text-gray-900 mb-3">{t.title}</h1>
         <p className="text-lg text-gray-600 mb-8">{t.body}</p>
 
-        <Button href="https://talu.app/home" size="lg" className="w-full">
+        <Button
+          href="https://talustories.com/home"
+          size="lg"
+          className="w-full"
+        >
           {t.button}
         </Button>
       </div>
